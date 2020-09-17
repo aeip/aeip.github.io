@@ -80,7 +80,7 @@
 
 .about-info {
 	position: absolute;
-	margin: 15px;
+	/* margin: 15px; */
 	flex: 1;
 	/* left: 50%;
     top: 50%;
@@ -121,6 +121,7 @@
 .about-info .letstalk {
 	width: 70%;
 	font-size: 4vw;
+	margin: 0px 0px 10% 0px;
 }
 
 #me-img {

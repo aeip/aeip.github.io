@@ -60,7 +60,6 @@ function app(projects) {
 }
 let i = 0;
 function matrix() {
-	// const $hiredText = $('<p class="matrixelement">').text('HIRED');
 	while (i <= 259) {
 		const $hiredText = $('<p class="matrixelement">').text('HIRED');
 		$('.enterthematrix').append($hiredText);
@@ -73,5 +72,6 @@ function matrix() {
 
 $('.bluepill').on('click', () => {
 	$('.skills-tohide').hide();
+	document.getElementById('skills').scrollIntoView();
 	setInterval(matrix, 20);
 });
