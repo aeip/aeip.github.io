@@ -28,8 +28,6 @@
 
 .main-container {
 	position: absolute;
-	/* display: flex;
-    flex-direction: column; */
 	top: 50%;
 	left: 50%;
 	/* Had to use this to get it to center properly because the top, and left properties centers it based on the top left corner of the div. The below will bring it back so that it is centered in the middle of the main container div instead of the top left corner. */
@@ -41,7 +39,6 @@
 
 #logo-img {
 	width: 60px;
-	/* height: 40px; */
 }
 
 .nav-container nav a {
@@ -64,7 +61,6 @@
 	border-width: 4px;
 	width: 50%;
 	border-radius: 30px;
-	/* margin: 10px 0px 0px 0px; */
 	font-weight: bold;
 }
 
@@ -72,7 +68,6 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	/* justify-items: center; */
 	text-align: center;
 	color: white;
 	height: 100vw;
@@ -80,11 +75,7 @@
 
 .about-info {
 	position: absolute;
-	/* margin: 15px; */
 	flex: 1;
-	/* left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
 }
 .about-info h2 {
 	margin: 10px;
@@ -138,13 +129,11 @@
 	display: flex;
 	justify-content: start;
 	position: relative;
-	/* margin: 10px; */
 	background-color: #414141;
 	padding: 10px;
 }
 
 .skills-title {
-	/* flex: 0 1 auto; */
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%, 0%);

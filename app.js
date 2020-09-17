@@ -38,6 +38,7 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
 	app(projects);
 });
 
+// Display googlesheets data
 function app(projects) {
 	for (let i = 0; i < projects.length; i = i + 1) {
 		const $projectDiv = $('<div class="eachProject">');
@@ -58,6 +59,8 @@ function app(projects) {
 		$projectDiv.append($projectTech);
 	}
 }
+
+// Display matrix or blue pill
 let i = 0;
 function matrix() {
 	while (i <= 259) {
