@@ -1,9 +1,9 @@
+$('.contactAlert').hide();
 // EmailJS
 (function() {
     emailjs.init("user_x1pjNHjz25ErQPONihZeA");
 })();
 window.onload = function () {
-	$('.contactAlert').hide();
 	document.getElementById('name').value = '';
     document.getElementById('email').value = '';
     document.getElementById('message').value = '';

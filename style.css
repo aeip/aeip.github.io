@@ -40,8 +40,8 @@
 }
 
 #logo-img {
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	/* height: 40px; */
 }
 
 .nav-container nav a {
@@ -267,6 +267,10 @@ footer .icons {
 	width: 300px;
 }
 
+#projects h1 {
+	padding: 50px;
+}
+
 .listprojects {
 	margin: 5%;
 	display: grid;
@@ -295,4 +299,8 @@ footer .icons {
 	grid-template-columns: repeat(20, auto);
 	color: green;
 	overflow: hidden;
+}
+
+footer p {
+	margin-bottom: 0rem;
 }
