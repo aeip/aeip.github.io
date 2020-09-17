@@ -1,0 +1,297 @@
+/* Red: #FF0015 */
+/* * {
+    border: 1px solid black;
+} */
+
+#vette-img {
+	width: 100%;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 3%;
+	align-items: center;
+}
+
+.top-section {
+	position: relative;
+}
+
+.allthenav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.main-container {
+	position: absolute;
+	/* display: flex;
+    flex-direction: column; */
+	top: 50%;
+	left: 50%;
+	/* Had to use this to get it to center properly because the top, and left properties centers it based on the top left corner of the div. The below will bring it back so that it is centered in the middle of the main container div instead of the top left corner. */
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 70%;
+	color: white;
+}
+
+#logo-img {
+	width: 50px;
+	height: 50px;
+}
+
+.nav-container nav a {
+	margin: 0px 20px 0px 20px;
+}
+
+.main-container h1 {
+	font-size: 80px;
+	/* Sets size based on viewport's width for responsiveness */
+	font-size: 8vw;
+}
+
+.main-container h2 {
+	font-weight: lighter;
+	font-size: 3vw;
+}
+
+.letstalk {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-width: 4px;
+	width: 50%;
+	border-radius: 30px;
+	/* margin: 10px 0px 0px 0px; */
+	font-weight: bold;
+}
+
+.about-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	/* justify-items: center; */
+	text-align: center;
+	color: white;
+	height: 100vw;
+}
+
+.about-info {
+	position: absolute;
+	margin: 15px;
+	flex: 1;
+	/* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+.about-info h2 {
+	margin: 10px;
+	font-size: 5vw;
+}
+.about-info p {
+	font-size: 3vw;
+}
+
+#austin-img {
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+	.nav-container nav {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	.nav-container svg {
+		display: none;
+	}
+	.nav-container nav {
+		display: inline;
+	}
+}
+
+#hambaobao {
+	transform: rotate(90deg);
+}
+
+.about-info .letstalk {
+	width: 70%;
+	font-size: 4vw;
+}
+
+#me-img {
+	width: 40vw;
+	border-radius: 50%;
+	border: 10px solid transparent;
+	background-image: linear-gradient(white, white),
+		linear-gradient(to right, #ff0015, blue);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+}
+
+.skills-header {
+	display: flex;
+	justify-content: start;
+	position: relative;
+	/* margin: 10px; */
+	background-color: #414141;
+	padding: 10px;
+}
+
+.skills-title {
+	/* flex: 0 1 auto; */
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, 0%);
+	color: white;
+}
+
+.dot {
+	height: 20px;
+	width: 20px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	border: none;
+}
+
+.dot-red {
+	background-color: #fa5a5a;
+}
+
+.dot-yellow {
+	background-color: #e6be3c;
+}
+
+.dot-green {
+	background-color: #55be37;
+}
+
+.skills-main {
+	background-color: #1e1e1e;
+	color: white;
+	padding: 10px;
+}
+.abouttag {
+    color: #FF0015;
+}
+.skillsprompt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pillbuttons button {
+    margin: 0px 15px 0px 0px;
+    padding: 4px;
+}
+
+.projects-container {
+    background-color: #19B5FE;
+    color: white;
+	text-align: center;
+}
+
+.contact-container {
+    background-color: #EB3B5A;
+    color: white;
+    text-align: center;
+    padding: 5% 0px 50px 0px;
+}
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container form input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid white;
+    margin: 10px 15% 10px 15%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contact-container form input {
+    color: white;
+}
+
+footer {
+    background-color: #EB3B5A;
+    color: white;
+    text-align: center;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10% 5% 10%;
+}
+
+.nav-container nav a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 30px #FF0015, 0 0 30px #1500FF;
+    font-size: 20px;
+}
+
+.nav-container nav a:hover {
+    font-size: 40px;
+}
+
+#message {
+    height: 150px;
+}
+
+.contact-container form input:nth-of-type(3)::-webkit-input-placeholder {
+   top: 10px;
+}
+
+.contact-container form input:nth-of-type(3):-moz-placeholder { /* Firefox 18- */
+   top: 10px;
+}
+/* //this one */
+.contact-container form input:nth-of-type(3)::-moz-placeholder {  /* Firefox 19+ */
+   top: 10px;
+}
+
+.contact-container form input:nth-of-type(3):-ms-input-placeholder {  
+   top: 10px;
+}
+
+.projectImg {
+	width: 300px;
+}
+
+.listprojects {
+	margin: 5%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.icons a {
+	color: white;
+}
+.contactAlert {
+	margin: 0px;
+}
+
+.dropdowncustom {
+	background-color: black;
+	border-radius: 10px;
+}
+
+.dropdowncustom a {
+	color: white;
+	text-shadow: 0 0 30px #FF0015, 0 0 30px #1500FF;
+}
+
+.enterthematrix {
+	display: grid;
+	grid-template-columns: repeat(20, auto);
+	color: green;
+	overflow: hidden;
+}
