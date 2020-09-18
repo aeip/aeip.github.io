@@ -5,10 +5,29 @@
         <title>Music App</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <!-- Styles -->
         <link rel="stylesheet" href="musicappstyle.css">
+        <!-- Debug version -->
+        <script src="node_modules/node-vibrant/dist/vibrant.js"></script>
+        <!-- Uglified version -->
+        <script src="node_modules/node-vibrant/dist/vibrant.min.js"></script>
     </head>
     <body>
+        <div class="main-container">
+            <div class="search">
+                <input onclick="deletetext()" id="search" name="search" type="text" placeholder="Artist" />
+            </div>
+            <div id="display">
 
+            </div>
+        </div>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script> -->
+        <!-- <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+        <script src="cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.0.0/Vibrant.min.js "></script> -->
         <script src="musicapp.js"></script>
     </body>
 </html>
