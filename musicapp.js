@@ -14,7 +14,7 @@ $('#search').on('keydown', (event) => {
 
 // Search music and display
 const itunesSearch = (search) => {
-    const url = 'https://itunes.apple.com/search?term=' + searchTerm + '&media?=music';
+    const url = 'https://itunes.apple.com/search?term=' + searchTerm + '&country=US&media=music&limit=10';
     $.getJSON(url,
 		function (data) {
             for (let i = 0; i < data.results.length; i++) {
