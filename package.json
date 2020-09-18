@@ -1,0 +1,28 @@
+{
+  "name": "aeip.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "colorthief": "^2.3.2",
+    "node-vibrant": "^3.1.5",
+    "rgbaster": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeip/aeip.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeip/aeip.github.io/issues"
+  },
+  "homepage": "https://github.com/aeip/aeip.github.io#readme"
+}

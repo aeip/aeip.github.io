@@ -1,4 +1,4 @@
-// var Vibrant = require(['node-vibrant']);
+var Vibrant = require(['node-vibrant']);
 let resultsArr = [];
 // Get search input
 let searchTerm = '';
@@ -41,55 +41,31 @@ const itunesSearch = (search) => {
 							$resultDiv.append($artist);
 							$('.musicplayer').hide();
 							$resultDiv.append($audioPlayer);
-                            $audioPlayer.append($preview);
-                            
-                            // Vibrant.from(resultsArr[i].artworkUrl100)
-							// 								.getPalette()
-							// 								.then((palette) => console.log(palette));
-
-							// var colorThief = new colorThief();
-							// var img = document.createElement('img');
-                            // img.setAttribute('src', resultsArr[i].artworkUrl100);
-                            // console.log(colorThief.getColor(img));
-                            
-                            
-							// const img = resolve(process.cwd(), resultsArr[i].artworkUrl100);
-
-							// 				ColorThief.getColor(img)
-							// 					.then((color) => {
-							// 						console.log(color);
-							// 					})
-							// 					.catch((err) => {
-							// 						console.log(err);
-							// 					});
-
-							// 				ColorThief.getPalette(img, 5)
-							// 					.then((palette) => {
-							// 						console.log(palette);
-							// 					})
-							// 					.catch((err) => {
-							// 						console.log(err);
-							// 					});
-							// var img = document.createElement('img');
-							// 				img.setAttribute('src', resultsArr[i].artworkUrl100);
-
-							// 				img.addEventListener('load', function () {
-							// 					var vibrant = new Vibrant(img);
-							//                     var swatches = vibrant.swatches();
-							//                     console.log(vibrant);
-							// 					for (var swatch in swatches)
-							// 						if (swatches.hasOwnProperty(swatch) && swatches[swatch])
-							// 							console.log(swatch, swatches[swatch].getHex());
-
-							// 					/*
-							// 					 * Results into:
-							// 					 * Vibrant #7a4426
-							// 					 * Muted #7b9eae
-							// 					 * DarkVibrant #348945
-							// 					 * DarkMuted #141414
-							// 					 * LightVibrant #f3ccb4
-							// 					 */
-							// 				});
+							$audioPlayer.append($preview);
+							$('.musicplayer').hide();
+							Vibrant.from(resultsArr[i].artworkUrl100)
+								.getPalette()
+                                .then((palette) => {
+                                    function setColor() {
+                                        var random = Math.floor(Math.random() * 6);
+                                        if (random === 1) {
+                                            $resultDiv.css('background-color', 'rgb(' + palette.Vibrant._rgb[0] + ',' + palette.Vibrant._rgb[1] + ',' + palette.Vibrant._rgb[2] + ')');
+                                        } else if (random === 2) {
+                                            $resultDiv.css('background-color', 'rgb(' + palette.Vibrant._rgb[0] + ',' + palette.LightVibrant._rgb[1] + ',' + palette.LightVibrant._rgb[2] + ')');
+                                        } else if (random === 3) {
+                                            $resultDiv.css('background-color', 'rgb(' + palette.DarkVibrant._rgb[0] + ',' + palette.DarkVibrant._rgb[1] + ',' + palette.DarkVibrant._rgb[2] + ')');
+                                        } else if (random === 4) {
+                                            $resultDiv.css('background-color', 'rgb(' + palette.Muted._rgb[0] + ',' + palette.Muted._rgb[1] + ',' + palette.Muted._rgb[2] + ')');
+                                        } else if (random === 5) {
+                                            $resultDiv.css('background-color', 'rgb(' + palette.LightMuted._rgb[0] + ',' + palette.LightMuted._rgb[1] + ',' + palette.LightMuted._rgb[2] + ')');
+                                        } else if (random === 6) {
+                                            $resultDiv.css('background-color', 'rgb(' + palette.DarkMuted._rgb[0] + ',' + palette.DarkMuted._rgb[1] + ',' + palette.DarkMuted._rgb[2] + ')');
+                                        } else if (random === 0) {
+                                            $resultDiv.css('background-color', 'rgb(' + palette.Vibrant._rgb[0] + ',' + palette.Vibrant._rgb[1] + ',' + palette.Vibrant._rgb[2] + ')');
+                                        }
+                                    }
+                                    setInterval(setColor, 5000);
+                                });
 						}
 		}
 	);
