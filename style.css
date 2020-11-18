@@ -79,10 +79,10 @@
 }
 .about-info h2 {
 	margin: 10px;
-	font-size: 5vw;
+	font-size: 4vw;
 }
 .about-info p {
-	font-size: 3vw;
+	font-size: 2vw;
 }
 
 #austin-img {
@@ -110,8 +110,8 @@
 }
 
 .about-info .letstalk {
-	width: 70%;
-	font-size: 4vw;
+	width: 50%;
+	font-size: 2vw;
 	margin: 0px 0px 10% 0px;
 }
 
